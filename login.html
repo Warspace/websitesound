@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--This is login for the space page due on the 10th of october 2021
+by: Trevyn Russell   email:mprater@uat.edu-->
+<html>
+    <head>
+        <script src="login.js"></script>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <title>UAT Space Login Page</title>
+    </head>
+    <body>
+        <h1 id="loginTitleText">Welcome to the UAT Space Page</h1>
+        <h2><div id="loginDivText" class="blink_me">please Log in...</div></h2>
+        <br>
+        <p id="LoginStatus">Status of Login...</p>
+        <br>
+        <form id="creditSubmit" onsubmit="return false">
+            First Name: <input type="text" id="fName"/> <br>
+            Last Name: <input type="text" id="lName"/> <br>
+            Badge Number <input type="number" id="badgeID"/> <br>
+            <input type="submit" onclick="checkCreds()"/>
+            
+        </form>
+    </body>
+</html>

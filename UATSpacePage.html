@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--Trevyn Russell-->
+
+<head>
+    <script src="class.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="BetterBlastoffcode.js"></script>
+    <script src="dataLoader.js"></script>
+    <!-- this is for background changes-->
+    <script>
+        var wins = 0
+        var loss = 0
+        var tie = 0
+        //alert("this is a test of the alert function")
+    </script>
+    <title>
+        Trevyn's web page
+    </title>
+</head>
+
+<body>
+    <table>
+        <td>
+            <img src="UATspaceLogo-1.jpg">
+        </td>
+        <td>
+            <h1>
+                UAT Space Program
+            </h1>
+        </td>
+    </table>
+    <table width="70%" border="2" id="data">
+        <col width="35%">
+        <col width="35%">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="latitude"></tr>
+            <tr id="logitude"></tr>
+            <tr id="gpsSensor_alt"></tr>
+            <tr id="bmpSensor_alt"></tr>
+            <tr id="bmpSensor_pres"></tr>
+            <tr id="bmpSensor_temp"></tr>
+            <tr id="digSensor_temp"></tr>
+            <tr id="cssSensor_temp"></tr>
+            <tr id="cssSensor_eCO2"></tr>
+            <tr id="cssSensor_TOVC"></tr>
+            <tr id="UV"></tr>
+            <tr id="accelX"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+    </table>
+    <br>
+    <button id="startButton" class="button" onclick="start();">Start</button>
+    <button id="stopButton" class="button" onclick="stop();"> Stop </button>
+    <br>
+    <br>
+    <p id="counddowntimer"> Starting Countdown...</p>
+   
+    <button class="button" onclick="playCraps();">Play Craps</button>
+    <p id="die1Res">Waiting on die1</p>
+    <p id="die2Res">Waiting on die2</p>
+    <p id="sumRes">Waiting for sum</p>
+    <p id="finalres">Waiting on finall results</p>
+    <p>wins are: <div id="winsres">0</div></p>
+    <p>losses are: <div id="lossres">0</div></p>
+    <p>ties are: <div id="tieres">0</div></p>
+    <br>
+    <br>
+    <button class="button" onclick="playStation();"> Play station sounds</button>
+</body>
+
+</html>
